@@ -1,0 +1,48 @@
+.navbar {
+    margin: 0;
+    padding: 0;
+    background-color: hsl(158deg 86% 79%);
+    display: grid;
+    grid-template-columns: 75% 25%;
+    /* border: solid red 1px; */
+
+}
+
+.app-title-link {
+    /* border: solid red 1px; */
+    padding: 0;
+    margin: 20px;
+    margin-left: 50px;
+    text-decoration: none;
+    width: fit-content;
+    height: fit-content;
+}
+
+.app-title {
+    color: hsl(184, 11%, 28%);
+    font-size: 30pt;
+    font-family: sans-serif;
+    font-weight: 500;
+    /* border: solid red 1px; */
+    padding: 0;
+    margin: 0;
+}
+
+.new-transaction-button-link {
+    /* border: solid red 1px; */
+    width: fit-content;
+    height: fit-content;
+    margin-top: 23px;
+}
+
+.new-transaction-button {
+    /* border: solid red 1px; */
+    border: solid 1px hsl(185, 21%, 65%);
+    border-radius: 5px;
+    color: hsl(184, 11%, 28%);
+    background-color: Transparent;
+    padding: 10px 20px;
+    font-size: 8pt;
+    font-weight: 600;
+    /* align-self: center; */
+}
