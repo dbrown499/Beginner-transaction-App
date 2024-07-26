@@ -25,6 +25,7 @@ const Show = () => {
             navigate('/transaction')
         })
         .catch(err => console.log(err))
+        
     }
 
     return (
