@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import { Link } from 'react-router-dom'
+import './Index.css'
 
 const Index = () => {
     const [total, setTotal] = useState([])
@@ -12,14 +13,14 @@ const Index = () => {
             })
             .catch(err => { console.log(err) })
     }, [])
-
-    const totalAmount = total.reduce((acc, currVal) => acc + currVal.amount, 0);
+console.log(total)
+    const totalAmount = total.reduce((acc, currVal) => acc += currVal.amount, 0);
 
 
     return (
         <>
-        <h1>Index</h1>
-            <div>Bank Account Total:{totalAmount}</div>
+            <h1 className='bank-total'>Bank Account Total: ${totalAmount}</h1>
+            <section></section>
             <div>
                 {total.map((trans, ind) => {
                     return (
